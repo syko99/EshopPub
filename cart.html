@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODExFISH</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar__wrapper">
+            <a href="index.html"><h1 id="navbar__logo">CODExFISH</h1></a>
+            <input type="checkbox" name="navbar__checkbox" id="navbar__checkbox">
+            <label for="navbar__checkbox" class="navbar__toggle"><span></span></label>
+            <div class="navbar__linksbuttons-wrapper">
+                <ul class="navbar__links">
+                    <li><a href="products-lures.html">Lures</a></li>
+                    <li><a href="products-lures.html">Gear</a></li>
+                    <li><a href="products-lures.html">Apparel</a></li>
+                    <li><a href="news-page.html">News</a></li>
+                </ul>
+                <ul class="navbar__buttons">
+                    <li><a href="#"><img src="EshopImages/Search-Icon.svg" alt="search button"></a></li>
+                    <li><a href="sign-in.html"><img src="EshopImages/Account-Icon.svg" alt="account button"></a></li>
+                    <li><a href="#"><img src="EshopImages/Cart-Icon.svg" alt="cart button"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="ad__banner">
+            <p>FREE SHIPPING on orders over $99</p>
+        </div>
+        <div class="nav__info">
+            <div class="nav__info-links"><a href="index.html">Home</a><p>/</p><a href="products-lures.html">Cart</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="cart__wrapper">
+            <h1>Shopping Cart</h1>
+            <div class="cart__items-wrapper">
+                <div class="cart__item">
+                    <img src="EshopImages/Bait-img6.jpg" alt="" class="cart__item-item">
+                    <div class="cart__item-desc">
+                        <h4>Bait Crank</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quasi
+                            nam animi quis tenetur!</p>
+                        <div>
+                            <label for="quantity">Qty: </label>
+                            <input type="number" name="quatity" id="quantity" min="1" max="99" value="1">
+                        </div>
+                        <div><span id="removeButton">Remove</span></div>
+                    </div>
+                    <p class="cart__item-price">$4.99</p>
+                </div>
+                <div class="cart__item">
+                    <img src="EshopImages/bait-img8.jpg" alt="" class="cart__item-item">
+                    <div class="cart__item-desc">
+                        <h4>Hog Glider</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quasi
+                            nam animi quis tenetur!</p>
+                        <div>
+                            <label for="quantity">Qty: </label>
+                            <input type="number" name="quatity" id="quantity" min="1" max="99" value="1">
+                        </div>
+                        <div><span id="removeButton">Remove</span></div>
+                    </div>
+                    <p class="cart__item-price">$24.99</p></div>
+                <div class="cart__item">
+                    <img src="EshopImages/Bait-img2.jpg" alt="" class="cart__item-item">
+                    <div class="cart__item-desc">
+                        <h4>Nano Craw</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quasi
+                            nam animi quis tenetur!</p>
+                        <div>
+                            <label for="quantity">Qty: </label>
+                            <input type="number" name="quantity" id="quantity" min="1" max="99" value="1">
+                        </div>
+                        <div><span id="removeButton">Remove</span></div>
+                    </div>
+                    <p class="cart__item-price">$4.99</p></div>
+            </div>
+            <div class="pricebox">
+                <p>Items: <span id="totalItems">3</span></p>
+                <p>Subtotal: $<span id="subTotal">34.97</span></p>
+                <a href="">
+                    <div class="checkout__button">Checkout</div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__grid">
+            <div class="footer__grid-panel">
+                <h4>Download our App</h4>
+                <img src="EshopImages/google-play-badge.png" alt="google play store">
+                <img src="EshopImages/app-store-badge.png" alt="apple app store">
+            </div>
+            <div class="footer__grid-panel">
+                <a href="index.html">
+                    <h1>CODExFISH</h1>
+                </a>
+                <p>Premium gear at an affordable price.</p>
+            </div>
+            <div class="footer__grid-panel">
+                <h4>Quick Links</h4>
+                <a href="news-page.html" class="footer__links">News</a>
+                <a href="sign-in.html" class="footer__links">Sign In</a>
+                <a href="contact-page.html" class="footer__links">Contact Us</a>
+                <a href="aboutus.html" class="footer__links">About Us</a>
+            </div>
+            <div class="footer__grid-panel">
+                <h4>Our Socials</h4>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.youtube.com/">Youtube</a>
+                <a href="https://twitter.com/">Twitter</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+            </div>
+        </div>
+        <div class="footer__message">
+            <p>Made with <span>💪</span> boxes by <a href="https://syko99.github.io/Portfolio/" target="_">Sykong Yang.</a></p>
+        </div>
+    </footer>
+</body>
+</html>

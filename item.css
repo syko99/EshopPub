@@ -1,0 +1,419 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --main-font: "Poppins";
+    --main-bg-color: #272b32;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    overflow-x: hidden;
+    font-family: var(--main-font),sans-serif;
+}
+
+/* ===== HEADER =====*/
+
+.navbar__wrapper{
+    background-color: var(--main-bg-color);
+    font-family: var(--main-font), sans-serif;
+    height: 5rem;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+#navbar__logo{
+    color: #f6ba73;
+    font-family: "Chakra petch", sans-serif;
+    font-size: 4rem;
+}
+.navbar__wrapper a{
+    text-decoration: none;
+}
+.navbar__linksbuttons-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.navbar__links{
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    column-gap: 4vw;
+    margin-right: auto;
+}
+.navbar__links a::after{
+    content: '';
+    position: absolute;
+    background-color: #f6ba73;
+    width: 0;
+    height: .2rem;
+    bottom: 0;
+    left: 0;
+}
+.navbar__links a{
+    color: white;
+    position: relative;
+}
+.navbar__links a:hover::after{
+    width: 100%;
+    transition: all .05s linear 0s;
+}
+.navbar__buttons{
+    display: flex;
+    align-items: center;
+}
+.navbar__buttons li{
+    padding: .5rem;
+}
+.navbar__buttons img{
+    transform: scale(.8);
+    width: 40px;
+    height: 40px;
+}
+.navbar__toggle{
+    z-index: 3;
+    position: absolute;
+    right: 2rem;
+}
+.navbar__toggle::after{
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: -.9rem;
+    right: -1.1rem;
+}
+.navbar__toggle span{
+    position: absolute;
+    background-color: white;
+    height: .25rem;
+    width: 2rem;
+    right: -1.1rem;
+    top: 0;
+    visibility: hidden;
+}
+.navbar__toggle span::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: .25rem;
+    width: 2rem;
+    transform: translateY(-.75rem);
+}
+.navbar__toggle span::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: .25rem;
+    width: 2rem;
+    transform: translateY(.75rem);
+}
+#navbar__checkbox{
+    display: none;
+}
+@media screen and (max-width:950px) {
+    .navbar__linksbuttons-wrapper{
+        transform: translateX(30rem);
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        padding-top: 6rem;
+        width: 30%;
+        row-gap: 1rem;
+        box-shadow: inset 0 0 20rem 10rem rgba(60, 63, 68, 0.85);
+        backdrop-filter: blur(5px);
+    }
+    .navbar__links{
+        flex-direction: column;
+        justify-items: center;
+        width: 100%;
+        row-gap: 2rem;
+    }
+    .navbar__buttons{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar__toggle:hover{
+        cursor: pointer;
+    }
+    .navbar__toggle{
+        transform: translateX(0);
+    }
+    .navbar__toggle span{
+        visibility: visible;
+    }
+    #navbar__checkbox:checked ~ .navbar__linksbuttons-wrapper{
+        transform: translateY(0);
+        transition: all .1s ease 0s;
+    }
+    #navbar__checkbox:checked ~ .navbar__toggle{
+        right: 15vw;
+    }
+    #navbar__checkbox:checked ~ .navbar__toggle span::before{
+        transform: rotate(45deg);
+        transition: all .1s ease 0s;
+    }
+    #navbar__checkbox:checked ~ .navbar__toggle span::after{
+        transform: rotate(-45deg);
+        transition: all .1s ease 0s;
+    }
+    #navbar__checkbox:checked ~ .navbar__toggle span{
+        background-color: rgb(0,0,0,0);
+        transition: all .1s ease 0s;
+    }
+}
+.ad__banner{
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 5rem;
+}
+.ad__banner p{
+    background-color: black;
+    font-weight: 100;
+    font-family: var(--main-font),sans-serif;
+}
+/* ===== ITEM =====*/
+
+.product{
+    display: grid;
+    position: relative;
+    top: 7rem;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 1rem;
+    margin: 5rem auto;
+}
+.product__photos{
+    display: grid;
+    place-items: center;
+    background-color: white;
+    width: 80%;
+    margin: 1rem;
+}
+.product__about{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    row-gap: 1rem;
+    padding: 2rem 1rem;
+}
+.product__about-name{
+    font-size: 4rem;
+}
+.product__about-nav{
+    color: gray;
+}
+.product__about a{
+    text-decoration: none;
+    color: #f6ba73;
+}
+.product__about-desc{
+    width: clamp(45ch, 50% ,75ch);
+    font-weight: 300;
+}
+.qty__addToCart{
+    display: flex;
+    gap: 1rem;
+}
+#quantity{
+    width: 2rem;
+}
+.addToCart__button{
+    text-decoration: none;
+    height: 2rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1rem;
+    color: #f6ba73;
+    background-color: #f6bb7300;
+    border-radius: 5px;
+    border: solid 2px #f6ba73;
+    cursor: pointer;
+    align-self: end;
+}
+.addToCart__button:hover{
+    background-color: #f6ba73;
+    color: black;
+}
+@media screen and (max-width: 950px) {
+    .product{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 1fr;
+    }
+}
+
+/* ===== Colorways =====*/
+.colorways__wrapper{
+    position: relative;
+    display: grid;
+}
+.colorways{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 2rem;
+    padding: 5rem 0;
+    place-self: center;
+}
+.colorways img{
+    width: 200px;
+}
+.colorways div{
+    position: relative;
+}
+.colorway{
+    cursor: pointer;
+}
+.colorway1::after{
+    content: "Toxic Crank";
+    position: absolute;
+    bottom: -25px;
+    left: 30%;
+    width: fit-content;
+    color: lightgray;
+    font-weight: 300;
+}
+.colorway2::after{
+    content: "Baby Bass";
+    position: absolute;
+    bottom: -25px;
+    left: 30%;
+    width: fit-content;
+    color: lightgray;
+    font-weight: 300;
+}
+.colorway3::after{
+    content: "Shell Back";
+    position: absolute;
+    bottom: -25px;
+    left: 30%;
+    width: fit-content;
+    color: lightgray;
+    font-weight: 300;
+}
+.colorway4::after{
+    content: "Super Shad";
+    position: absolute;
+    bottom: -25px;
+    left: 30%;
+    width: fit-content;
+    color: lightgray;
+    font-weight: 300;
+}
+.colorway5::after{
+    content: "Neon Shad";
+    position: absolute;
+    bottom: -25px;
+    left: 30%;
+    width: fit-content;
+    color: lightgray;
+    font-weight: 300;
+}
+@media screen and (max-width:950px) {
+    .colorways{
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+
+/* ===== FOOTER =====*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1c20;
+    height: 15rem;
+    width: 100%;
+    margin-top: 10rem;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: rgb(170, 170, 170);
+    position: absolute;
+}
+.footer__grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footer__grid-panel{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.footer__grid-panel img{
+    width: 150px;
+}
+.footer__grid-panel h1{
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 2rem;
+    color: #f6ba73;
+}
+.footer__grid-panel a{
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+}
+.footer__grid-panel a:hover{
+    color: rgb(180, 180, 180);
+}
+.footer__grid-panel p{
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+}
+.footer__message{
+    font-weight: 100;
+    font-size: 14px;
+}
+.footer__message a{
+    text-decoration: none;
+    color: darkgray;
+    cursor: pointer;
+}
+.footer__message a:hover{
+    color: #f6ba73;
+}
+@media screen and (max-width:950px){
+    footer{
+        height: 35rem;
+        padding: 8rem 0;
+    }
+    .footer__grid{
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODExFISH</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact-page.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar__wrapper">
+            <a href="index.html"><h1 id="navbar__logo">CODExFISH</h1></a>
+            <input type="checkbox" name="navbar__checkbox" id="navbar__checkbox">
+            <label for="navbar__checkbox" class="navbar__toggle"><span></span></label>
+            <div class="navbar__linksbuttons-wrapper">
+                <ul class="navbar__links">
+                    <li><a href="products-lures.html">Lures</a></li>
+                    <li><a href="products-lures.html">Gear</a></li>
+                    <li><a href="products-lures.html">Apparel</a></li>
+                    <li><a href="news-page.html">News</a></li>
+                </ul>
+                <ul class="navbar__buttons">
+                    <li><a href="#"><img src="EshopImages/Search-Icon.svg" alt="search button"></a></li>
+                    <li><a href="sign-in.html"><img src="EshopImages/Account-Icon.svg" alt="account button"></a></li>
+                    <li><a href="cart.html"><img src="EshopImages/Cart-Icon.svg" alt="cart button"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Contact section -->
+        <section class="contact__wrapper">
+            <div class="contact__form">
+                <h1>Send us a message</h1>
+                <form action="">
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                    <input type="email" name="userEmail" id="userEmail" placeholder="Email" required>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+                    <textarea name="message" class="message" id="message" cols="60" rows="10" required>Type message here...</textarea>
+                </form>
+            </div>
+            <div class="contact__info">
+                <h1>Our Info</h1>
+                <p><span class="info__label">Email:</span> info@codefish.com</p>
+                <p><span class="info__label">Phone Number:</span> 123-1234-1234</p>
+                <p><span class="info__label">Open Hours:</span> 9am - 6pm</p>
+                <p><span class="info__label">Address:</span> 42 Wallaby Way, Sydney</p>
+                <a href="https://www.google.com/maps/place/Sydney+Opera+House/@-33.8567844,151.2152967,17z/data=!3m2!4b1!5s0x6b12ae67d234a27f:0xd6d4e9380ca1e32f!4m5!3m4!1s0x6b12ae665e892fdd:0x3133f8d75a1ac251!8m2!3d-33.8567844!4d151.2152967" target="_"><img src="EshopImages/location-map.jpg" alt="map"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- footer wrapper -->
+        <div class="footer__grid">
+            <div class="footer__grid-panel">
+                <h4>Download our App</h4>
+                <img src="EshopImages/google-play-badge.png" alt="google play store">
+                <img src="EshopImages/app-store-badge.png" alt="apple app store">
+            </div>
+            <div class="footer__grid-panel">
+                <a href="index.html">
+                    <h1>CODExFISH</h1>
+                </a>
+                <p>Premium gear at an affordable price.</p>
+            </div>
+            <div class="footer__grid-panel">
+                <h4>Quick Links</h4>
+                <a href="news-page.html" class="footer__links">News</a>
+                <a href="sign-in.html" class="footer__links">Sign In</a>
+                <a href="contact-page.html" class="footer__links">Contact Us</a>
+                <a href="aboutus.html" class="footer__links">About Us</a>
+            </div>
+            <div class="footer__grid-panel">
+                <h4>Our Socials</h4>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.youtube.com/">Youtube</a>
+                <a href="https://twitter.com/">Twitter</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+            </div>
+        </div>
+        <div class="footer__message">
+            <p>Made with <span>💪</span> boxes by <a href="https://syko99.github.io/Portfolio/" target="_">Sykong Yang.</a></p>
+        </div>
+    </footer>
+</body>
+</html>

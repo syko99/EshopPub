@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODExFISH</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="sign-in.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav class="navbar__wrapper">
+            <a href="index.html"><h1 id="navbar__logo">CODExFISH</h1></a>
+            <input type="checkbox" name="navbar__checkbox" id="navbar__checkbox">
+            <label for="navbar__checkbox" class="navbar__toggle"><span></span></label>
+            <div class="navbar__linksbuttons-wrapper">
+                <ul class="navbar__links">
+                    <li><a href="products-lures.html">Lures</a></li>
+                    <li><a href="products-lures.html">Gear</a></li>
+                    <li><a href="products-lures.html">Apparel</a></li>
+                    <li><a href="news-page.html">News</a></li>
+                </ul>
+                <ul class="navbar__buttons">
+                    <li><a href="#"><img src="EshopImages/Search-Icon.svg" alt="search button"></a></li>
+                    <li><a href="sign-in.html"><img src="EshopImages/Account-Icon.svg" alt="account button"></a></li>
+                    <li><a href="cart.html"><img src="EshopImages/Cart-Icon.svg" alt="cart button"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- sign in page contents -->
+        <h1>Account Login</h1>
+        <div class="signin__wrapper">
+            <div class="signin__box">
+                <form action="post" class="signin__box-form">
+                    <div class="inputbox">
+                        <label for="useremail">Email:</label><br>
+                        <input type="email" name="useremail" id="useremail" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="password">Password:</label><br>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="forgotpass">
+                        <div>
+                            <input type="checkbox" name="rememberme" id="rememberme">
+                            <label for="rememberme">Remember me</label>
+                        </div>
+                        <a href="#">Forgot my password</a>
+                    </div>
+                    <div class="signin__button"><input type="submit" value="Sign In"></div>
+                </form>
+            </div>
+            <div class="signup__box">
+                <h2>New Customer?</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis 
+                    voluptatibus odio corrupti odit dicta est at. Aut saepe totam necessitatibus.</p>
+                <a href="">
+                    <div class="signup__button">Sign Up</div>
+                </a>
+            </div>
+        </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

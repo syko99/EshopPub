@@ -1,0 +1,328 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --main-font: "Poppins";
+    --main-bg-color: #272b32;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    overflow-x: hidden;
+    font-family: var(--main-font),sans-serif;
+}
+
+/* ===== HEADER =====*/
+
+.navbar__wrapper{
+    background-color: var(--main-bg-color);
+    font-family: var(--main-font), sans-serif;
+    height: 5rem;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+#navbar__logo{
+    color: #f6ba73;
+    font-family: "Chakra petch", sans-serif;
+    font-size: 4rem;
+}
+.navbar__wrapper a{
+    text-decoration: none;
+}
+.navbar__linksbuttons-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.navbar__links{
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    column-gap: 4vw;
+    margin-right: auto;
+}
+.navbar__links a::after{
+    content: '';
+    position: absolute;
+    background-color: #f6ba73;
+    width: 0;
+    height: .2rem;
+    bottom: 0;
+    left: 0;
+}
+.navbar__links a{
+    color: white;
+    position: relative;
+}
+.navbar__links a:hover::after{
+    width: 100%;
+    transition: all .05s linear 0s;
+}
+.navbar__buttons{
+    display: flex;
+    align-items: center;
+}
+.navbar__buttons li{
+    padding: .5rem;
+}
+.navbar__buttons img{
+    transform: scale(.8);
+    width: 40px;
+    height: 40px;
+}
+.navbar__toggle{
+    z-index: 3;
+    position: absolute;
+    right: 2rem;
+}
+.navbar__toggle::after{
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: -.9rem;
+    right: -1.1rem;
+}
+.navbar__toggle span{
+    position: absolute;
+    background-color: white;
+    height: .25rem;
+    width: 2rem;
+    right: -1.1rem;
+    top: 0;
+    visibility: hidden;
+}
+.navbar__toggle span::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: .25rem;
+    width: 2rem;
+    transform: translateY(-.75rem);
+}
+.navbar__toggle span::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: .25rem;
+    width: 2rem;
+    transform: translateY(.75rem);
+}
+#navbar__checkbox{
+    display: none;
+}
+@media screen and (max-width:950px) {
+    .navbar__linksbuttons-wrapper{
+        transform: translateX(30rem);
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        padding-top: 6rem;
+        width: 30%;
+        row-gap: 1rem;
+        box-shadow: inset 0 0 20rem 10rem rgba(60, 63, 68, 0.85);
+        backdrop-filter: blur(5px);
+    }
+    .navbar__links{
+        flex-direction: column;
+        justify-items: center;
+        width: 100%;
+        row-gap: 2rem;
+    }
+    .navbar__buttons{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar__toggle:hover{
+        cursor: pointer;
+    }
+    .navbar__toggle{
+        transform: translateX(0);
+    }
+    .navbar__toggle span{
+        visibility: visible;
+    }
+    #navbar__checkbox:checked ~ .navbar__linksbuttons-wrapper{
+        transform: translateY(0);
+        transition: all .1s ease 0s;
+    }
+    #navbar__checkbox:checked ~ .navbar__toggle{
+        right: 15vw;
+    }
+    #navbar__checkbox:checked ~ .navbar__toggle span::before{
+        transform: rotate(45deg);
+        transition: all .1s ease 0s;
+    }
+    #navbar__checkbox:checked ~ .navbar__toggle span::after{
+        transform: rotate(-45deg);
+        transition: all .1s ease 0s;
+    }
+    #navbar__checkbox:checked ~ .navbar__toggle span{
+        background-color: rgb(0,0,0,0);
+        transition: all .1s ease 0s;
+    }
+}
+/* ===== MAIN ===== */
+.aboutus-image{
+    width: 100vw;
+    height: 100vh;
+    background: url("EshopImages/river-rain-fly-fisherman.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+}
+.aboutus-image h1{
+    font-size: 6rem;
+    color: #f6ba73;
+    box-shadow: inset 0 0 20rem 10rem rgba(0, 0, 0, 0.288);
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+}
+
+.desc__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1rem;
+    gap: 2rem;
+    color: lightgray;
+    position: relative;
+}
+.desc__wrapper::before{
+    content: '';
+    position: absolute;
+    width: 34%;
+    height: 1px;
+    top: 3rem;
+    left: 33%;
+    background-color: gray;
+}
+.desc__wrapper::after{
+    content: '';
+    position: absolute;
+    width: 34%;
+    height: 1px;
+    bottom: 2rem;
+    left: 33%;
+    background-color: gray;
+}
+.desc__wrapper p{
+    width: clamp(45ch, 60%, 75ch);
+    text-align: center;
+    line-height: 2rem;
+    font-weight: 400;
+}
+.desc__wrapper h4{
+    font-size: 1.5rem;
+}
+.aboutus__badges{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+.aboutus__badges img{
+    width: 100px;
+    filter: invert(80%);
+}
+.badge{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 950px) {
+    .aboutus__badges{
+        width: 100%;
+    }
+}
+
+/* ===== FOOTER =====*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1c20;
+    height: 15rem;
+    margin-top: 3rem;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: rgb(170, 170, 170);
+    position: relative;
+}
+.footer__grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footer__grid-panel{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.footer__grid-panel img{
+    width: 150px;
+}
+.footer__grid-panel h1{
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 2rem;
+    color: #f6ba73;
+}
+.footer__grid-panel a{
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+}
+.footer__grid-panel a:hover{
+    color: rgb(180, 180, 180);
+}
+.footer__grid-panel p{
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+}
+.footer__message{
+    font-weight: 100;
+    font-size: 14px;
+}
+.footer__message a{
+    text-decoration: none;
+    color: darkgray;
+    cursor: pointer;
+}
+.footer__message a:hover{
+    color: #f6ba73;
+}
+@media screen and (max-width:950px){
+    footer{
+        height: 35rem;
+        padding: 8rem 0;
+    }
+    .footer__grid{
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+}

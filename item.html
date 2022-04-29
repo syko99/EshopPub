@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODExFISH</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="item.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar__wrapper">
+            <a href="index.html"><h1 id="navbar__logo">CODExFISH</h1></a>
+            <input type="checkbox" name="navbar__checkbox" id="navbar__checkbox">
+            <label for="navbar__checkbox" class="navbar__toggle"><span></span></label>
+            <div class="navbar__linksbuttons-wrapper">
+                <ul class="navbar__links">
+                    <li><a href="products-lures.html">Lures</a></li>
+                    <li><a href="products-lures.html">Gear</a></li>
+                    <li><a href="products-lures.html">Apparel</a></li>
+                    <li><a href="news-page.html">News</a></li>
+                </ul>
+                <ul class="navbar__buttons">
+                    <li><a href=""><img src="EshopImages/Search-Icon.svg" alt="search button"></a></li>
+                    <li><a href="sign-in.html"><img src="EshopImages/Account-Icon.svg" alt="account button"></a></li>
+                    <li><a href="cart.html"><img src="EshopImages/Cart-Icon.svg" alt="cart button"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Advertisement banner -->
+        <div class="ad__banner">
+            <p>FREE SHIPPING on orders over $99</p>
+        </div>
+    </header>
+    <main>
+        <!-- Product wrapper -->
+        <section class="product">
+            <div class="product__photos">
+                <img src="EshopImages/minimag-img1.jpg" id="productImg" alt="product image 1">
+            </div>
+            <div class="product__about">
+                <p class="product__about-nav">Products/Crankbaits</p>
+                <h1 class="product__about-name">MiniMag Crank</h1>
+                <p class="product__about-price">$4.99</p>
+                <div>
+                    <select name="colorPicker" id="colorPicker" class="product__about-color">
+                        <option value="toxicCrank" selected="selected">Toxic Crank</option>
+                        <option value="babyBass">Baby Bass</option>
+                        <option value="shellBack">Shell Back</option>
+                        <option value="superShad">Super Shad</option>
+                        <option value="neonShad">Neon Shad</option>
+                    </select>
+                </div>
+                <div class="qty__addToCart">
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <a href="">
+                        <div class="addToCart__button">
+                            <p>Add To Cart</p>
+                        </div>
+                    </a>
+                </div>
+                <h4 class="product__about-descHeader">Product Details</h4>
+                <p class="product__about-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aliquam
+                     repudiandae rerum dicta at ducimus nesciunt ipsam eos voluptatum. Aliquam.</p>
+            </div>
+        </section>
+        <!-- Product colorway images -->
+        <div class="colorways__wrapper">
+            <div class="colorways">
+                <div class="colorway1"><img src="EshopImages/minimag-img1.jpg" class="colorway" alt="colorway 1"></div>
+                <div class="colorway2"><img src="EshopImages/minimag-img2.jpg" class="colorway" alt="colorway 2"></div>
+                <div class="colorway3"><img src="EshopImages/minimag-img3.jpg" class="colorway" alt="colorway 3"></div>
+                <div class="colorway4"><img src="EshopImages/minimag-img4.jpg" class="colorway" alt="colorway 4"></div>
+                <div class="colorway5"><img src="EshopImages/minimag-img5.jpg" class="colorway" alt="colorway 5"></div>
+            </div>
+        </div>
+        <!-- Related products grid -->
+        <section class="related__products">
+
+        </section>
+    </main>
+    <footer>
+        <!-- footer wrapper -->
+        <div class="footer__grid">
+            <div class="footer__grid-panel">
+                <h4>Download our App</h4>
+                <img src="EshopImages/google-play-badge.png" alt="google play store">
+                <img src="EshopImages/app-store-badge.png" alt="apple app store">
+            </div>
+            <div class="footer__grid-panel">
+                <a href="index.html">
+                    <h1>CODExFISH</h1>
+                </a>
+                <p>Premium gear at an affordable price.</p>
+            </div>
+            <div class="footer__grid-panel">
+                <h4>Quick Links</h4>
+                <a href="news-page.html" class="footer__links">News</a>
+                <a href="sign-in.html" class="footer__links">Sign In</a>
+                <a href="contact-page.html" class="footer__links">Contact Us</a>
+                <a href="aboutus.html" class="footer__links">About Us</a>
+            </div>
+            <div class="footer__grid-panel">
+                <h4>Our Socials</h4>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.youtube.com/">Youtube</a>
+                <a href="https://twitter.com/">Twitter</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+            </div>
+        </div>
+        <div class="footer__message">
+            <p>Made with <span>💪</span> boxes by <a href="https://syko99.github.io/Portfolio/" target="_">Sykong Yang.</a></p>
+        </div>
+    </footer>
+    <script src="item.js"></script>
+</body>
+</html>

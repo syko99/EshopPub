@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODExFISH</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="products-lures.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar__wrapper">
+            <a href="index.html"><h1 id="navbar__logo">CODExFISH</h1></a>
+            <input type="checkbox" name="navbar__checkbox" id="navbar__checkbox">
+            <label for="navbar__checkbox" class="navbar__toggle"><span></span></label>
+            <div class="navbar__linksbuttons-wrapper">
+                <ul class="navbar__links">
+                    <li><a href="products-lures.html">Lures</a></li>
+                    <li><a href="products-lures.html">Gear</a></li>
+                    <li><a href="products-lures.html">Apparel</a></li>
+                    <li><a href="news-page.html">News</a></li>
+                </ul>
+                <ul class="navbar__buttons">
+                    <li><a href="#"><img src="EshopImages/Search-Icon.svg" alt="search button"></a></li>
+                    <li><a href="sign-in.html"><img src="EshopImages/Account-Icon.svg" alt="account button"></a></li>
+                    <li><a href="cart.html"><img src="EshopImages/Cart-Icon.svg" alt="cart button"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Advertisement banner -->
+        <div class="ad__banner">
+            <p>FREE SHIPPING on orders over $99</p>
+        </div>
+        <!-- Navigation path -->
+        <div class="nav__info">
+            <div class="nav__info-links"><a href="index.html">Home</a><p>/</p><a href="products-lures.html">Product</a></div>
+        </div>
+    </header>
+    <main>
+        <!-- Products page contents -->
+        <h1>Products</h1>
+        <!-- Filters -->
+        <section class="filters">
+            <input type="checkbox" name="filter__checkbox" id="filter__checkbox">
+            <label for="filter__checkbox">
+                <h3>SPECIFY</h3>
+            </label>
+            <div class="filters__list">
+                <label for="hardBait">
+                    <input type="checkbox" name="filter" id="hardBait">
+                    Hard Baits
+                </label>
+                <label for="softPlastics">
+                    <input type="checkbox" name="filter" id="softPlastics">
+                    Soft Plastics
+                </label>
+                <label for="topWater">
+                    <input type="checkbox" name="filter" id="topWater">
+                    Topwaters
+                </label>
+                <label for="swimBait">
+                    <input type="checkbox" name="filter" id="swimBait">
+                    Swim Baits
+                </label>
+                <label for="trailers">
+                    <input type="checkbox" name="filter" id="trailers">
+                    Craw Trailers
+                </label>
+                <label for="nedBaits">
+                    <input type="checkbox" name="filter" id="nedBaits">
+                    Ned Baits
+                </label>
+                <label for="worms">
+                    <input type="checkbox" name="filter" id="worms">
+                    Worms
+                </label>
+                <label for="cranks">
+                    <input type="checkbox" name="filter" id="cranks">
+                    Crank Baits
+                </label>
+                <label for="frogs">
+                    <input type="checkbox" name="filter" id="frogs">
+                    Frogs
+                </label>
+                <label for="gliders">
+                    <input type="checkbox" name="filter" id="gliders">
+                    Gliders
+                </label>
+                <label for="spinners">
+                    <input type="checkbox" name="filter" id="spinners">
+                    Spinnerbaits
+                </label>
+                <label for="spoons">
+                    <input type="checkbox" name="filter" id="spoons">
+                    Spoons
+                </label>
+            </div>
+        </section>
+        <div class="sorter">
+            <select name="sorts" id="sorts">
+                <option value="sort by">Sort by</option>
+                <option value="priceLowHigh">Price: low to high</option>
+                <option value="priceHighLow">Price: high to low</option>
+            </select>
+        </div>
+        <!-- products items grid -->
+        <section class="product__grid">
+            <a href="item.html" class="product__card-link"><div class="product__card">
+                <img src="EshopImages/Bait-img1.jpg" alt="plastic worm">
+                <div class="product__card-desc">
+                    <h4>Curly Tail</h4>
+                    <img src="EshopImages/5-star-rating.svg" alt="5 star rating" class="stars">
+                    <p class="product__desc">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="product__card-footer">
+                        <p class="subtle-text">(multiple colors)</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="view__this">
+                    <img src="EshopImages/eye-preview.svg" alt="">
+                </div>
+            </div>
+            </a>
+            <a href="item.html" class="product__card-link"><div class="product__card">
+                <img src="EshopImages/Bait-img2.jpg" alt="plastic worm">
+                <div class="product__card-desc">
+                    <h4>Nano Craw</h4>
+                    <img src="EshopImages/5-star-rating.svg" alt="5 star rating" class="stars">
+                    <p class="product__desc">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="product__card-footer">
+                        <p class="subtle-text">(multiple colors)</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="view__this">
+                    <img src="EshopImages/eye-preview.svg" alt="">
+                </div>
+            </div>
+            </a>
+            <a href="item.html" class="product__card-link">
+                <div class="product__card">
+                <img src="EshopImages/Bait-img3.jpg" alt="plastic worm">
+                <div class="product__card-desc">
+                    <h4>Feather Bug</h4>
+                    <img src="EshopImages/5-star-rating.svg" alt="5 star rating" class="stars">
+                    <p class="product__desc">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="product__card-footer">
+                        <p class="subtle-text">(multiple colors)</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="view__this">
+                    <img src="EshopImages/eye-preview.svg" alt="">
+                </div>
+                </div>
+            </a>
+            <a href="item.html" class="product__card-link"><div class="product__card">
+                <img src="EshopImages/Bait-img4.jpg" alt="crank bait">
+                <div class="product__card-desc">
+                    <h4>MiniMag Crank</h4>
+                    <img src="EshopImages/5-star-rating.svg" alt="5 star rating" class="stars">
+                    <p class="product__desc">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="product__card-footer">
+                        <p class="subtle-text">(multiple colors)</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="view__this">
+                    <img src="EshopImages/eye-preview.svg" alt="">
+                </div>
+            </div>
+            </a>
+            <a href="item.html" class="product__card-link"><div class="product__card">
+                <img src="EshopImages/Bait-img5.jpg" alt="crank bait">
+                <div class="product__card-desc">
+                    <h4>Deep Lip</h4>
+                    <img src="EshopImages/5-star-rating.svg" alt="5 star rating" class="stars">
+                    <p class="product__desc">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="product__card-footer">
+                        <p class="subtle-text">(multiple colors)</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="view__this">
+                    <img src="EshopImages/eye-preview.svg" alt="">
+                </div>
+            </div>
+            </a>
+            <a href="item.html" class="product__card-link"><div class="product__card">
+                <img src="EshopImages/Bait-img6.jpg" alt="crank bait">
+                <div class="product__card-desc">
+                    <h4>Bait Crank</h4>
+                    <img src="EshopImages/5-star-rating.svg" alt="5 star rating" class="stars">
+                    <p class="product__desc">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="product__card-footer">
+                        <p class="subtle-text">(multiple colors)</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="view__this">
+                    <img src="EshopImages/eye-preview.svg" alt="preview">
+                </div>
+            </div>
+            </a>
+            <a href="item.html" class="product__card-link"><div class="product__card">
+                <img src="EshopImages/Bait-img7.jpg" alt="soft frog">
+                <div class="product__card-desc">
+                    <h4>Blow Frog</h4>
+                    <img src="EshopImages/5-star-rating.svg" alt="5 star rating" class="stars">
+                    <p class="product__desc">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="product__card-footer">
+                        <p class="subtle-text">(multiple colors)</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+                <div class="view__this">
+                    <img src="EshopImages/eye-preview.svg" alt="">
+                </div>
+            </div>
+            </a>
+            <a href="item.html" class="product__card-link"><div class="product__card">
+                <img src="EshopImages/Bait-img8.jpg" alt="swim bait">
+                <div class="product__card-desc">
+                    <h4>Hog Glider</h4>
+                    <img src="EshopImages/5-star-rating.svg" alt="5 star rating" class="stars">
+                    <p class="product__desc">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="product__card-footer">
+                        <p class="subtle-text">(multiple colors)</p>
+                        <p>$34.99</p>
+                    </div>
+                </div>
+                <div class="view__this">
+                    <img src="EshopImages/eye-preview.svg" alt="">
+                </div>
+            </div>
+            </a>
+            <a href="item.html" class="product__card-link"><div class="product__card">
+                <img src="EshopImages/Bait-img9.jpg" alt="swim bait">
+                <div class="product__card-desc">
+                    <h4>Nest Glider</h4>
+                    <img src="EshopImages/5-star-rating.svg" alt="5 star rating" class="stars">
+                    <p class="product__desc">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="product__card-footer">
+                        <p class="subtle-text">(multiple colors)</p>
+                        <p>$19.99</p>
+                    </div>
+                </div>
+                <div class="view__this">
+                    <img src="EshopImages/eye-preview.svg" alt="">
+                </div>
+            </div>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <!-- footer wrapper -->
+        <div class="footer__grid">
+            <div class="footer__grid-panel">
+                <h4>Download our App</h4>
+                <img src="EshopImages/google-play-badge.png" alt="google play store">
+                <img src="EshopImages/app-store-badge.png" alt="apple app store">
+            </div>
+            <div class="footer__grid-panel">
+                <a href="index.html">
+                    <h1>CODExFISH</h1>
+                </a>
+                <p>Premium gear at an affordable price.</p>
+            </div>
+            <div class="footer__grid-panel">
+                <h4>Quick Links</h4>
+                <a href="news-page.html" class="footer__links">News</a>
+                <a href="sign-in.html" class="footer__links">Sign In</a>
+                <a href="contact-page.html" class="footer__links">Contact Us</a>
+                <a href="aboutus.html" class="footer__links">About Us</a>
+            </div>
+            <div class="footer__grid-panel">
+                <h4>Our Socials</h4>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.youtube.com/">Youtube</a>
+                <a href="https://twitter.com/">Twitter</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+            </div>
+        </div>
+        <div class="footer__message">
+            <p>Made with <span>💪</span> boxes by <a href="https://syko99.github.io/Portfolio/" target="_">Sykong Yang.</a></p>
+        </div>
+    </footer>
+</body>
+</html>
