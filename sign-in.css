@@ -302,4 +302,13 @@ main h1{
     .signin__wrapper{
         width: 95%;
     }
+    .signin__wrapper{
+        flex-direction: column;
+        padding: 2rem 0;
+        gap: 2rem;
+        height: 32rem;
+    }
+    main h1{
+        font-size: 3rem;
+    }
 }
