@@ -311,4 +311,7 @@ main h1{
     main h1{
         font-size: 3rem;
     }
+    main { 
+        gap: 4rem;
+    }
 }
